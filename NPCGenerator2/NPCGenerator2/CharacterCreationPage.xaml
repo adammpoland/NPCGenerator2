@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NPCGenerator2.CharacterCreationPage"
+             Title="Character Sheet"
+             BackgroundColor="DarkRed">
+    <ScrollView Margin="20">
+
+        <StackLayout>
+            
+        <Button Text="Randomize"
+                Clicked="OnRandomizeButtonClicked"
+                BackgroundColor="GhostWhite"
+                FontAttributes="Bold"
+                FontFamily="mate"/>
+
+        <Button Text="Save"
+                Clicked="OnSaveButtonClicked"
+                BackgroundColor="GhostWhite"
+                FontFamily="mate"/>
+
+         <StackLayout Orientation="Vertical">
+            <Label Text="Name:" TextColor="GhostWhite"/>
+            <Entry Text="{Binding Name}" x:Name="Name" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical">
+            <Label Text="Race:" TextColor="GhostWhite"/>
+            <Entry Text="{Binding Race}" x:Name="Race" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical">
+            <Label Text="Class:" TextColor="GhostWhite"/>
+            <Entry Text="{Binding Class}" x:Name="Class" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
+        </StackLayout>
+
+  
+        <StackLayout Orientation="Vertical">
+            <Label Text="Age:" TextColor="GhostWhite"/>
+            <Entry Text="{Binding Age1}" x:Name="Age1" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite" />
+        </StackLayout>
+
+
+     
+            <StackLayout>
+
+
+            </StackLayout>
+       <StackLayout>
+           <Grid RowSpacing="0"
+          ColumnSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                
+               <Label Text="Strength:"
+                      TextColor="GhostWhite"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontFamily="mate"/>
+                
+                <Entry Text="{Binding Strength}"
+                       BackgroundColor="GhostWhite"
+                       x:Name="Strength"
+                       WidthRequest="50"
+                       Grid.Column="1"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontFamily="mate"
+                       TextColor="Black"/>
+                        
+
+               <Label Grid.Row="1"
+                       Text="Dexterity:"
+                       TextColor="GhostWhite"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                      FontFamily="mate"
+                      />
+                
+                <Entry Text="{Binding Dexterity}"
+                       BackgroundColor="GhostWhite"
+                       x:Name="Dexterity"
+                       WidthRequest="50"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontFamily="mate"
+                       TextColor="Black"/>  
+
+                <Label Grid.Row="2"
+                       TextColor="GhostWhite"
+                       Text="Constitution:"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontFamily="mate"
+                       />
+                
+                <Entry Text="{Binding Constitution}"
+                       BackgroundColor="GhostWhite"
+                       x:Name="Constitution"
+                       WidthRequest="50"
+                       Grid.Row="2"
+                       Grid.Column="1"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontFamily="mate"
+                       TextColor="Black"/>
+               
+                <Label Grid.Row="3"
+                       TextColor="GhostWhite"
+                       Text="Intelligence:"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontFamily="mate"
+                       />
+                
+                <Entry Text="{Binding Intelligence}"
+                       BackgroundColor="GhostWhite"
+                       x:Name="Intelligence"
+                       WidthRequest="50"
+                       Grid.Row="3"
+                       Grid.Column="1"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontFamily="mate"
+                       TextColor="Black"/>
+
+               <Label Grid.Row="4"
+                      TextColor="GhostWhite"
+                       Text="Wisdom:"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                      FontFamily="mate"
+                      />
+                
+                <Entry Text="{Binding Wisdom}"
+                       BackgroundColor="GhostWhite"
+                       x:Name="Wisdom"
+                       WidthRequest="50"
+                       Grid.Row="4"
+                       Grid.Column="1"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontFamily="mate"
+                       TextColor="Black"/>  
+
+                <Label Grid.Row="5"
+                       TextColor="GhostWhite"
+                       Text="Charisma"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontFamily="mate"/>
+                
+                <Entry Text="{Binding Charisma}"
+                       BackgroundColor="GhostWhite"
+                       x:Name="Charisma"
+                       WidthRequest="50"
+                       Grid.Row="5"
+                       Grid.Column="1"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontFamily="mate"
+                       TextColor="Black"/>  
+                
+            </Grid>
+       </StackLayout>
+        
+            
+            
+       
+
+        <!--<Editor Placeholder="Enter your note"
+                Text="{Binding Text}"
+                HeightRequest="100" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="Save"
+                    Clicked="OnSaveButtonClicked" />
+            <Button Grid.Column="1"
+                    Text="Delete"
+                    Clicked="OnDeleteButtonClicked"/>
+        </Grid>-->
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
