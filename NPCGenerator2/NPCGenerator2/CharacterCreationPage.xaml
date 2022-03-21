@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:NPCGenerator2.CustomControls"
              x:Class="NPCGenerator2.CharacterCreationPage"
              Title="Character Sheet"
              BackgroundColor="DarkRed">
@@ -64,27 +64,27 @@
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
                        FontFamily="mate"/>
-                
-                <Entry Text="{Binding Strength}"
-                       BackgroundColor="GhostWhite"
-                       x:Name="Strength"
-                       WidthRequest="50"
-                       Grid.Column="1"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       FontFamily="mate"
-                       TextColor="Black"/>
-                        
 
-               <Label Grid.Row="1"
-                       Text="Dexterity:"
-                       TextColor="GhostWhite"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                      FontFamily="mate"
-                      />
-                
-                <Entry Text="{Binding Dexterity}"
+                <local:CustomEntry Text="{Binding Strength}"
+                    BackgroundColor="GhostWhite"
+                    x:Name="Strength"
+                    WidthRequest="50"
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontFamily="mate"
+                    TextColor="Black" />
+
+
+                <Label Grid.Row="1"
+                    Text="Dexterity:"
+                    TextColor="GhostWhite"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontFamily="mate"
+                    />
+
+                <local:CustomEntry Text="{Binding Dexterity}"
                        BackgroundColor="GhostWhite"
                        x:Name="Dexterity"
                        WidthRequest="50"
@@ -102,8 +102,8 @@
                        VerticalOptions="Center"
                        FontFamily="mate"
                        />
-                
-                <Entry Text="{Binding Constitution}"
+
+                <local:CustomEntry Text="{Binding Constitution}"
                        BackgroundColor="GhostWhite"
                        x:Name="Constitution"
                        WidthRequest="50"
@@ -121,8 +121,8 @@
                        VerticalOptions="Center"
                        FontFamily="mate"
                        />
-                
-                <Entry Text="{Binding Intelligence}"
+
+                <local:CustomEntry Text="{Binding Intelligence}"
                        BackgroundColor="GhostWhite"
                        x:Name="Intelligence"
                        WidthRequest="50"
@@ -140,8 +140,8 @@
                        VerticalOptions="Center"
                       FontFamily="mate"
                       />
-                
-                <Entry Text="{Binding Wisdom}"
+
+               <local:CustomEntry Text="{Binding Wisdom}"
                        BackgroundColor="GhostWhite"
                        x:Name="Wisdom"
                        WidthRequest="50"
@@ -158,8 +158,8 @@
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
                        FontFamily="mate"/>
-                
-                <Entry Text="{Binding Charisma}"
+
+                <local:CustomEntry Text="{Binding Charisma}"
                        BackgroundColor="GhostWhite"
                        x:Name="Charisma"
                        WidthRequest="50"
