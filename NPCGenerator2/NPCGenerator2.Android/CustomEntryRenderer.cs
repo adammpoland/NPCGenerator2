@@ -1,5 +1,7 @@
 ﻿using Android.Content;
+using Android.Graphics.Drawables;
 using Android.Text;
+using Android.Views;
 using NPCGenerator2.CustomControls;
 using NPCGenerator2.Droid;
 using Xamarin.Forms;
@@ -19,11 +21,11 @@ namespace NPCGenerator2.Droid
             base.OnElementChanged(e);
 
             if (Control != null)
-            {
-                Control.SetBackgroundColor(global::Android.Graphics.Color.LightGreen);
-                this.Control.SetBackground(null);
-                this.Control.InputType = InputTypes.TextVariationVisiblePassword;
-
+            {   
+                Control.Background = Android.App.Application.Context.GetDrawable(Resource.Drawable.roundcorners);
+                //Control.Gravity = GravityFlags.CenterVertical;
+                //Control.SetPadding(10, 10, 10, 10); 
+                //Control.Background = new ColorDrawable(Android.Graphics.Color.Transparent);
 
             }
         }

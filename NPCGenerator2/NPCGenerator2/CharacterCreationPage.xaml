@@ -20,24 +20,23 @@
                 FontFamily="mate"/>
 
          <StackLayout Orientation="Vertical">
-            <Label Text="Name:" TextColor="GhostWhite"/>
-            <Entry Text="{Binding Name}" x:Name="Name" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
+            <Label Text="Name:" FontFamily="mate" TextColor="GhostWhite"/>
+            <local:CustomEntry Text="{Binding Name}" x:Name="Name" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
         </StackLayout>
 
         <StackLayout Orientation="Vertical">
-            <Label Text="Race:" TextColor="GhostWhite"/>
-            <Entry Text="{Binding Race}" x:Name="Race" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
+            <Label Text="Race:" FontFamily="mate" TextColor="GhostWhite"/>
+            <local:CustomEntry Text="{Binding Race}" x:Name="Race" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
         </StackLayout>
 
         <StackLayout Orientation="Vertical">
-            <Label Text="Class:" TextColor="GhostWhite"/>
-            <Entry Text="{Binding Class}" x:Name="Class" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
+            <Label Text="Class:" FontFamily="mate" TextColor="GhostWhite"/>
+            <local:CustomEntry Text="{Binding Class}" x:Name="Class" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
         </StackLayout>
 
-  
         <StackLayout Orientation="Vertical">
-            <Label Text="Age:" TextColor="GhostWhite"/>
-            <Entry Text="{Binding Age1}" x:Name="Age1" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite" />
+            <Label Text="Age:" FontFamily="mate" TextColor="GhostWhite"/>
+            <local:CustomEntry Text="{Binding Age1}" x:Name="Age1" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite" />
         </StackLayout>
 
 
@@ -47,7 +46,7 @@
 
             </StackLayout>
        <StackLayout>
-           <Grid RowSpacing="0"
+           <Grid RowSpacing="4"
           ColumnSpacing="0">
                 <Grid.RowDefinitions>
                     <RowDefinition />
