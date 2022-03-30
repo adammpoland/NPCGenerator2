@@ -40,13 +40,13 @@ namespace NPCGenerator2
             List<string> AllLastNames = new List<string>() { "Arkalis", "Armanci", "Bilger", "Blackstrand", "Brightwater", "Carnavon", "Caskajaro", "Coldshore", "Coyle", "Cresthill", "Cuttlescar", "Daargen", "Dalicarlia", "Danamark", "Donoghan", "Drumwind", "Dunhall", "Ereghast", "Falck", "Fallenbridge", "Faringray", "Fletcher", "Fryft", "Goldrudder", "Grantham", "Graylock", "Gullscream", "Hindergrass", "Iscalon", "Kreel", "Kroft", "Lamoth", "Leerstrom", "Lynchfield", "Moonridge", "Netheridge", "Oakenheart", "Pyncion", "Ratley", "Redraven", "Revenmar", "Roxley", "Sell", "Seratolva", "Shanks", "Shattermast", "Shaulfer", "Silvergraft", "Stavenger", "Stormchapel", "Strong", "Swiller", "Talandro", "Targana", "Towerfall", "Umbermoor", "Van Devries", "Van Gandt", "Van Hyden", "Varcona", "Varzand", "Voortham", "Vrye", "Webb", "Welfer", "Wilxes", "Wintermere", "Wygarthe", "Zatchet", "Zethergyll", "Ambershard", "Barrelhelm", "Copperhearth", "Deepmiddens", "Drakantal", "Evermead", "Garkalan", "Grimtor", "Hackshield", "Irongull", "Markolak", "Ramcrown", "Rockharvest", "Silvertarn", "Skandalor", "Zarkanan" , "Autumnloft", "Balefrost", "Briarfell", "Evenwind", "Graytrails", "Mooncairn", "Riverwall", "Stormwolf", "Summergale", "Sunshadow", "Woodenhawk" };
 
 
-            string class1 = classes[rnd.Next(0, 12)];
+            string class1 = classes[rnd.Next(0, classes.Count)];
             Class.Text = class1;
 
-            string race = races[rnd.Next(0, 9)];
+            string race = races[rnd.Next(0, races.Count)];
             Race.Text = race;
 
-            string age = ages[rnd.Next(0, 5)];
+            string age = ages[rnd.Next(0, ages.Count)];
             Age1.Text = age;
 
             string fullName = AllFirstNames[rnd.Next(0, AllFirstNames.Count)] + " " + AllLastNames[rnd.Next(0, AllLastNames.Count)];

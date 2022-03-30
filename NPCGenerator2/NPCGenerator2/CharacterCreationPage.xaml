@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:NPCGenerator2.CustomControls"
              x:Class="NPCGenerator2.CharacterCreationPage"
              Title="Character Sheet"
              BackgroundColor="DarkRed">
@@ -20,24 +20,23 @@
                 FontFamily="mate"/>
 
          <StackLayout Orientation="Vertical">
-            <Label Text="Name:" TextColor="GhostWhite"/>
-            <Entry Text="{Binding Name}" x:Name="Name" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
+            <Label Text="Name:" FontFamily="mate" TextColor="GhostWhite"/>
+            <local:CustomEntry Text="{Binding Name}" x:Name="Name" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
         </StackLayout>
 
         <StackLayout Orientation="Vertical">
-            <Label Text="Race:" TextColor="GhostWhite"/>
-            <Entry Text="{Binding Race}" x:Name="Race" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
+            <Label Text="Race:" FontFamily="mate" TextColor="GhostWhite"/>
+            <local:CustomEntry Text="{Binding Race}" x:Name="Race" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
         </StackLayout>
 
         <StackLayout Orientation="Vertical">
-            <Label Text="Class:" TextColor="GhostWhite"/>
-            <Entry Text="{Binding Class}" x:Name="Class" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
+            <Label Text="Class:" FontFamily="mate" TextColor="GhostWhite"/>
+            <local:CustomEntry Text="{Binding Class}" x:Name="Class" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
         </StackLayout>
 
-  
         <StackLayout Orientation="Vertical">
-            <Label Text="Age:" TextColor="GhostWhite"/>
-            <Entry Text="{Binding Age1}" x:Name="Age1" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite" />
+            <Label Text="Age:" FontFamily="mate" TextColor="GhostWhite"/>
+            <local:CustomEntry Text="{Binding Age1}" x:Name="Age1" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite" />
         </StackLayout>
 
 
@@ -47,7 +46,7 @@
 
             </StackLayout>
        <StackLayout>
-           <Grid RowSpacing="0"
+           <Grid RowSpacing="4"
           ColumnSpacing="0">
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -64,27 +63,27 @@
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
                        FontFamily="mate"/>
-                
-                <Entry Text="{Binding Strength}"
-                       BackgroundColor="GhostWhite"
-                       x:Name="Strength"
-                       WidthRequest="50"
-                       Grid.Column="1"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       FontFamily="mate"
-                       TextColor="Black"/>
-                        
 
-               <Label Grid.Row="1"
-                       Text="Dexterity:"
-                       TextColor="GhostWhite"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                      FontFamily="mate"
-                      />
-                
-                <Entry Text="{Binding Dexterity}"
+                <local:CustomEntry Text="{Binding Strength}"
+                    BackgroundColor="GhostWhite"
+                    x:Name="Strength"
+                    WidthRequest="50"
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontFamily="mate"
+                    TextColor="Black" />
+
+
+                <Label Grid.Row="1"
+                    Text="Dexterity:"
+                    TextColor="GhostWhite"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontFamily="mate"
+                    />
+
+                <local:CustomEntry Text="{Binding Dexterity}"
                        BackgroundColor="GhostWhite"
                        x:Name="Dexterity"
                        WidthRequest="50"
@@ -102,8 +101,8 @@
                        VerticalOptions="Center"
                        FontFamily="mate"
                        />
-                
-                <Entry Text="{Binding Constitution}"
+
+                <local:CustomEntry Text="{Binding Constitution}"
                        BackgroundColor="GhostWhite"
                        x:Name="Constitution"
                        WidthRequest="50"
@@ -121,8 +120,8 @@
                        VerticalOptions="Center"
                        FontFamily="mate"
                        />
-                
-                <Entry Text="{Binding Intelligence}"
+
+                <local:CustomEntry Text="{Binding Intelligence}"
                        BackgroundColor="GhostWhite"
                        x:Name="Intelligence"
                        WidthRequest="50"
@@ -140,8 +139,8 @@
                        VerticalOptions="Center"
                       FontFamily="mate"
                       />
-                
-                <Entry Text="{Binding Wisdom}"
+
+               <local:CustomEntry Text="{Binding Wisdom}"
                        BackgroundColor="GhostWhite"
                        x:Name="Wisdom"
                        WidthRequest="50"
@@ -158,8 +157,8 @@
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
                        FontFamily="mate"/>
-                
-                <Entry Text="{Binding Charisma}"
+
+                <local:CustomEntry Text="{Binding Charisma}"
                        BackgroundColor="GhostWhite"
                        x:Name="Charisma"
                        WidthRequest="50"
