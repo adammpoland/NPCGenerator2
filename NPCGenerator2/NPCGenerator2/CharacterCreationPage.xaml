@@ -19,24 +19,24 @@
                 BackgroundColor="GhostWhite"
                 FontFamily="mate"/>
 
-         <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Vertical">
             <Label Text="Name:" FontFamily="mate" TextColor="GhostWhite"/>
-            <local:CustomEntry Text="{Binding Name}" x:Name="Name" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
+            <local:CustomEntry Text="{Binding Name}" x:Name="Name" WidthRequest="250" TextColor="GhostWhite" FontFamily="mate" BackgroundColor="GhostWhite"/>
         </StackLayout>
 
         <StackLayout Orientation="Vertical">
             <Label Text="Race:" FontFamily="mate" TextColor="GhostWhite"/>
-            <local:CustomEntry Text="{Binding Race}" x:Name="Race" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
+            <local:CustomEntry Text="{Binding Race}" x:Name="Race" WidthRequest="250" TextColor="GhostWhite" FontFamily="mate" BackgroundColor="GhostWhite"/>
         </StackLayout>
 
         <StackLayout Orientation="Vertical">
             <Label Text="Class:" FontFamily="mate" TextColor="GhostWhite"/>
-            <local:CustomEntry Text="{Binding Class}" x:Name="Class" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite"/>
+            <local:CustomEntry Text="{Binding Class}" x:Name="Class" WidthRequest="250" TextColor="GhostWhite" FontFamily="mate" BackgroundColor="GhostWhite"/>
         </StackLayout>
 
         <StackLayout Orientation="Vertical">
             <Label Text="Age:" FontFamily="mate" TextColor="GhostWhite"/>
-            <local:CustomEntry Text="{Binding Age1}" x:Name="Age1" WidthRequest="250" TextColor="Black" FontFamily="mate" BackgroundColor="GhostWhite" />
+            <local:CustomEntry Text="{Binding Age1}" x:Name="Age1" WidthRequest="250" TextColor="GhostWhite" FontFamily="mate" BackgroundColor="GhostWhite" />
         </StackLayout>
 
 
@@ -45,9 +45,9 @@
 
 
             </StackLayout>
-       <StackLayout>
-           <Grid RowSpacing="4"
-          ColumnSpacing="0">
+        <StackLayout>
+            <Grid RowSpacing="4"
+            ColumnSpacing="0">
                 <Grid.RowDefinitions>
                     <RowDefinition />
                     <RowDefinition />
@@ -58,11 +58,11 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 
-               <Label Text="Strength:"
-                      TextColor="GhostWhite"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       FontFamily="mate"/>
+                <Label Text="Strength:"
+                        TextColor="GhostWhite"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontFamily="mate"/>
 
                 <local:CustomEntry Text="{Binding Strength}"
                     BackgroundColor="GhostWhite"
@@ -72,7 +72,7 @@
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     FontFamily="mate"
-                    TextColor="Black" />
+                    TextColor="GhostWhite" />
 
 
                 <Label Grid.Row="1"
@@ -84,93 +84,93 @@
                     />
 
                 <local:CustomEntry Text="{Binding Dexterity}"
-                       BackgroundColor="GhostWhite"
-                       x:Name="Dexterity"
-                       WidthRequest="50"
-                       Grid.Row="1"
-                       Grid.Column="1"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       FontFamily="mate"
-                       TextColor="Black"/>  
+                        BackgroundColor="GhostWhite"
+                        x:Name="Dexterity"
+                        WidthRequest="50"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontFamily="mate"
+                        TextColor="GhostWhite"/>  
 
                 <Label Grid.Row="2"
-                       TextColor="GhostWhite"
-                       Text="Constitution:"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       FontFamily="mate"
-                       />
+                        TextColor="GhostWhite"
+                        Text="Constitution:"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontFamily="mate"
+                        />
 
                 <local:CustomEntry Text="{Binding Constitution}"
-                       BackgroundColor="GhostWhite"
-                       x:Name="Constitution"
-                       WidthRequest="50"
-                       Grid.Row="2"
-                       Grid.Column="1"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       FontFamily="mate"
-                       TextColor="Black"/>
+                        BackgroundColor="GhostWhite"
+                        x:Name="Constitution"
+                        WidthRequest="50"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontFamily="mate"
+                        TextColor="GhostWhite"/>
                
                 <Label Grid.Row="3"
-                       TextColor="GhostWhite"
-                       Text="Intelligence:"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       FontFamily="mate"
-                       />
+                        TextColor="GhostWhite"
+                        Text="Intelligence:"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontFamily="mate"
+                        />
 
                 <local:CustomEntry Text="{Binding Intelligence}"
-                       BackgroundColor="GhostWhite"
-                       x:Name="Intelligence"
-                       WidthRequest="50"
-                       Grid.Row="3"
-                       Grid.Column="1"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       FontFamily="mate"
-                       TextColor="Black"/>
+                        BackgroundColor="GhostWhite"
+                        x:Name="Intelligence"
+                        WidthRequest="50"
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontFamily="mate"
+                        TextColor="GhostWhite"/>
 
-               <Label Grid.Row="4"
-                      TextColor="GhostWhite"
-                       Text="Wisdom:"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                      FontFamily="mate"
-                      />
+                <Label Grid.Row="4"
+                        TextColor="GhostWhite"
+                        Text="Wisdom:"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontFamily="mate"
+                        />
 
-               <local:CustomEntry Text="{Binding Wisdom}"
-                       BackgroundColor="GhostWhite"
-                       x:Name="Wisdom"
-                       WidthRequest="50"
-                       Grid.Row="4"
-                       Grid.Column="1"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       FontFamily="mate"
-                       TextColor="Black"/>  
+                <local:CustomEntry Text="{Binding Wisdom}"
+                        BackgroundColor="GhostWhite"
+                        x:Name="Wisdom"
+                        WidthRequest="50"
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontFamily="mate"
+                        TextColor="GhostWhite"/>  
 
                 <Label Grid.Row="5"
-                       TextColor="GhostWhite"
-                       Text="Charisma"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       FontFamily="mate"/>
+                        TextColor="GhostWhite"
+                        Text="Charisma"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontFamily="mate"/>
 
                 <local:CustomEntry Text="{Binding Charisma}"
-                       BackgroundColor="GhostWhite"
-                       x:Name="Charisma"
-                       WidthRequest="50"
-                       Grid.Row="5"
-                       Grid.Column="1"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       FontFamily="mate"
-                       TextColor="Black"/>  
+                        BackgroundColor="GhostWhite"
+                        x:Name="Charisma"
+                        WidthRequest="50"
+                        Grid.Row="5"
+                        Grid.Column="1"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontFamily="mate"
+                        TextColor="GhostWhite"/>  
                 
             </Grid>
-       </StackLayout>
+        </StackLayout>
         
             
             

@@ -21,10 +21,10 @@ namespace NPCGenerator2.Droid
             base.OnElementChanged(e);
 
             if (Control != null)
-            {   
+            {
+                //Control.SetBackground()
                 Control.Background = Android.App.Application.Context.GetDrawable(Resource.Drawable.roundcorners);
                 //Control.Gravity = GravityFlags.CenterVertical;
-                //Control.SetPadding(10, 10, 10, 10); 
                 //Control.Background = new ColorDrawable(Android.Graphics.Color.Transparent);
 
             }
